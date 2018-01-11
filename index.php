@@ -14,7 +14,7 @@
 
     <main class="index-main">
         <header class="text-center">
-            <h2>Thesis Managment</h2>
+            <h2>Thesis Mgt</h2>
             A place to share masters and phd thesis documents across universities
         </header>
 
