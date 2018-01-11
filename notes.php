@@ -40,7 +40,7 @@
             if (mysqli_num_rows($result) == 0) {
                 echo "<div class = 'messageCenter'>";
                 echo '<h1>No results Found</h1>';
-                echo "<a href='../THM/index.php' class='btn btn-danger' >< Back to search</a>";
+                echo "<a href='index.php' class='btn btn-danger' >< Back to search</a>";
                 echo '</div>';
             }
 

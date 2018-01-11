@@ -1,9 +1,9 @@
 <?php
     // Database connection
-    const DB_HOST = "localhost";
-    const DB_USER = "root";
-    const DB_PASS = "";
-    const DB_NAME = "notes";
+    const DB_HOST = "us-cdbr-gcp-east-01.cleardb.net";
+    const DB_USER = "bc77702e2b0467";
+    const DB_PASS = "dab23c4e";
+    const DB_NAME = "gcp_defdc6dbbc63b640de36";
 
     // Student table column names
     const STUDENT_TABLE_NAME = "student";

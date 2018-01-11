@@ -16,17 +16,17 @@
             $user_logged_in = true;
             ?>
                 
-                <a href="../THM/addsubject.php" class="btn btn-default navbar-btn">New Subject</a>
+                <a href="addsubject.php" class="btn btn-default navbar-btn">New Subject</a>
 
-                <a href="../THM/write.php" class="btn btn-default navbar-btn">Write</a>
+                <a href="write.php" class="btn btn-default navbar-btn">Write</a>
             	
                 <a href="?link=1" name="link1" class="btn btn-default navbar-btn">Log out</a>
             <?php
         } else {
             echo "Not logged in";
             ?>
-                <a href="../THM/login.php" class="btn btn-default navbar-btn">Log in</a>
-                <a href="../THM/register.php" class="btn bt1n-default navbar-btn">Sign up</a>
+                <a href="login.php" class="btn btn-default navbar-btn">Log in</a>
+                <a href="register.php" class="btn bt1n-default navbar-btn">Sign up</a>
             <?php
         }
 
