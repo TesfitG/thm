@@ -1,7 +1,9 @@
 <?php 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-include('/included-files/connect-database.php');
+require_once "included-files/connect-database.php";
+
+//include('/included-files/connect-database.php');
 
 if(isset($_POST['subjectsubmit'])) {
 	
