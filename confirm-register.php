@@ -40,18 +40,12 @@
     $result = mysqli_query($connection, $query);
     if (!$result) {
         $result = "Something went wrong";
+		echo mysqli_error($connection);
     } else {
         $result =  "Success!";
     }
     /* check connection */
-	if (mysqli_connect_errno()) {
-		printf("Connect failed: %s\n", mysqli_connect_error());
-		exit();
-	}
-
-	if (!mysqli_query($connection, "SET a=1")) {
-		printf("Errormessage: %s\n", mysqli_error($connection));
-	}
+	
 	
 	
 	
