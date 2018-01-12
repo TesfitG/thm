@@ -33,7 +33,8 @@
     // encrypt password
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-    $query  = "INSERT INTO $student_table ($student_username, $student_firstname,$student_lastname,$student_password, $student_email)";
+    $query  = "INSERT INTO $student_table
+	($student_username, $student_firstname,$student_lastname,$student_password, $student_email)";
     $query .= "VALUES ('$username','$first_name','$last_name','$hashed_password','$email');";
 
     $result = mysqli_query($connection, $query);
@@ -42,7 +43,20 @@
     } else {
         $result =  "Success!";
     }
-    ?>
+    /* check connection */
+	if (mysqli_connect_errno()) {
+		printf("Connect failed: %s\n", mysqli_connect_error());
+		exit();
+	}
+
+	if (!mysqli_query($result, "SET a=1")) {
+		printf("Errormessage: %s\n", mysqli_error($link));
+	}
+	
+	
+	
+	
+	?>
     
     <header>
     <h1 class = "text-success"><?php echo $result ?></h1>
