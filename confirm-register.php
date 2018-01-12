@@ -50,7 +50,7 @@
 	}
 
 	if (!mysqli_query($result, "SET a=1")) {
-		printf("Errormessage: %s\n", mysqli_error($link));
+		printf("Errormessage: %s\n", mysqli_error($result));
 	}
 	
 	
