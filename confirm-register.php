@@ -1,4 +1,7 @@
-<?php include('/included-files/connect-database.php'); ?>
+<?php include('/included-files/connect-database.php'); 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+?>
 
 <?php
     $first_name = $_POST[POST_FIRST_NAME];
