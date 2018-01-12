@@ -49,8 +49,8 @@
 		exit();
 	}
 
-	if (!mysqli_query($result, "SET a=1")) {
-		printf("Errormessage: %s\n", mysqli_error($result));
+	if (!mysqli_query($connection, "SET a=1")) {
+		printf("Errormessage: %s\n", mysqli_error($connection));
 	}
 	
 	
