@@ -1,5 +1,5 @@
 <?php
-include('/included-files/connect-database.php');
+require_once "included-files/connect-database.php";
 
 $searchResult = $_GET['id'];
 

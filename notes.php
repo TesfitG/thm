@@ -1,4 +1,4 @@
-<?php include('/included-files/connect-database.php'); ?>
+<?php require_once "included-files/connect-database.php"; ?>
 
 <?php
     $searchResult = $_GET["search"];

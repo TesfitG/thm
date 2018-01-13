@@ -1,4 +1,4 @@
-<?php include('/included-files/connect-database.php'); 
+<?php require_once "included-files/connect-database.php"; 
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 ?>

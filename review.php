@@ -1,4 +1,4 @@
-<?php include('/included-files/connect-database.php'); ?>
+<?php require_once "included-files/connect-database.php"; ?>
 
 <?php 
     $post_subject_number = $_POST[POST_NOTE_NUMBER];
